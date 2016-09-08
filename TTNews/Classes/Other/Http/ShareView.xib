@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="201"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIr-hc-gna">
+                    <rect key="frame" x="22" y="10" width="50" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="LfS-xG-EdM"/>
+                        <constraint firstAttribute="height" constant="66" id="anU-2p-kn2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-56" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="微信" image="share_微信">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="pWv-Lc-EmW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEn-2i-BiU">
+                    <rect key="frame" x="241.5" y="10" width="50" height="66"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-56" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="新浪" image="share_微博">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="fKM-uu-NGp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-16-RJg">
+                    <rect key="frame" x="21" y="86" width="50" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="48u-E9-9jl"/>
+                        <constraint firstAttribute="height" constant="66" id="xad-NY-spF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-56" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="QQ好友" image="share_qq">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="dIE-dD-yE4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bC-ZI-otZ">
+                    <rect key="frame" x="0.0" y="166" width="313" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.98039215690000003" green="0.08235294118" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RUH-5a-GpM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99Q-2n-nhD">
+                    <rect key="frame" x="131" y="86" width="50" height="66"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-56" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="QQ空间" image="share_QQ空间">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="x5H-0u-p95"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7r7-pU-3k4">
+                    <rect key="frame" x="0.0" y="162" width="313" height="1"/>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0P1-kx-fj4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOF-Jx-1Jt">
+                    <rect key="frame" x="132" y="10" width="49.5" height="66"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-56" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="朋友圈" image="share_朋友圈">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="guS-v6-Bbp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mga-cK-Sh8">
+                    <rect key="frame" x="241" y="86" width="50" height="66"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="-63" minY="50" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="20"/>
+                    <state key="normal" title="复制链接" image="share_复制链接">
+                        <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="ceY-yq-jyZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XIr-hc-gna" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="4fp-vO-z35"/>
+                <constraint firstItem="99Q-2n-nhD" firstAttribute="width" secondItem="XIr-hc-gna" secondAttribute="width" id="BXZ-Ss-Npz"/>
+                <constraint firstItem="3bC-ZI-otZ" firstAttribute="top" secondItem="7r7-pU-3k4" secondAttribute="bottom" constant="3" id="C4s-4P-g7N"/>
+                <constraint firstItem="hEn-2i-BiU" firstAttribute="width" secondItem="XIr-hc-gna" secondAttribute="width" id="FiU-Cy-YfS"/>
+                <constraint firstItem="mga-cK-Sh8" firstAttribute="leading" secondItem="99Q-2n-nhD" secondAttribute="trailing" constant="60" id="GPC-eB-ig9"/>
+                <constraint firstItem="XIr-hc-gna" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="HSd-9r-Qjx"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="JaS-bS-bdI"/>
+                <constraint firstItem="7r7-pU-3k4" firstAttribute="top" secondItem="99Q-2n-nhD" secondAttribute="bottom" constant="10" id="M1T-7R-azu"/>
+                <constraint firstItem="mga-cK-Sh8" firstAttribute="height" secondItem="XIr-hc-gna" secondAttribute="height" id="PF8-vd-1tV"/>
+                <constraint firstItem="99Q-2n-nhD" firstAttribute="leading" secondItem="Kq9-16-RJg" secondAttribute="trailing" constant="60" id="TUp-cn-6ih"/>
+                <constraint firstAttribute="trailing" secondItem="hEn-2i-BiU" secondAttribute="trailing" constant="30" id="Tq6-T1-QEC"/>
+                <constraint firstItem="Kq9-16-RJg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="UxL-ST-xuS"/>
+                <constraint firstItem="7r7-pU-3k4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V1D-PG-Be3"/>
+                <constraint firstItem="mga-cK-Sh8" firstAttribute="top" secondItem="hEn-2i-BiU" secondAttribute="bottom" constant="10" id="VT7-4O-rtr"/>
+                <constraint firstItem="hEn-2i-BiU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="XgW-Ae-OBQ"/>
+                <constraint firstItem="3bC-ZI-otZ" firstAttribute="top" secondItem="99Q-2n-nhD" secondAttribute="bottom" constant="10" id="XqR-gd-eud"/>
+                <constraint firstItem="Kq9-16-RJg" firstAttribute="width" secondItem="XIr-hc-gna" secondAttribute="width" id="YFz-cN-eQh"/>
+                <constraint firstAttribute="trailing" secondItem="mga-cK-Sh8" secondAttribute="trailing" constant="30" id="aok-5b-9eC"/>
+                <constraint firstItem="hEn-2i-BiU" firstAttribute="height" secondItem="XIr-hc-gna" secondAttribute="height" id="cbp-Ng-xva"/>
+                <constraint firstItem="99Q-2n-nhD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eSy-iQ-RPi"/>
+                <constraint firstItem="Kq9-16-RJg" firstAttribute="height" secondItem="XIr-hc-gna" secondAttribute="height" id="esg-4H-ds0"/>
+                <constraint firstItem="Kq9-16-RJg" firstAttribute="top" secondItem="XIr-hc-gna" secondAttribute="bottom" constant="10" id="ewZ-WG-dKg"/>
+                <constraint firstItem="3bC-ZI-otZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fJK-HK-mm4"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="leading" secondItem="XIr-hc-gna" secondAttribute="trailing" constant="20" id="g83-b3-Fb1"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="leading" secondItem="XIr-hc-gna" secondAttribute="trailing" constant="60" id="kZA-F7-pNL"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="height" secondItem="XIr-hc-gna" secondAttribute="height" id="ml4-cJ-tbq"/>
+                <constraint firstAttribute="trailing" secondItem="7r7-pU-3k4" secondAttribute="trailing" id="ov4-WL-x7g"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="width" secondItem="XIr-hc-gna" secondAttribute="width" id="p1p-oE-oZJ"/>
+                <constraint firstItem="hEn-2i-BiU" firstAttribute="leading" secondItem="xOF-Jx-1Jt" secondAttribute="trailing" constant="60" id="pXZ-f6-pxd"/>
+                <constraint firstItem="99Q-2n-nhD" firstAttribute="height" secondItem="XIr-hc-gna" secondAttribute="height" id="qVg-yU-uMp"/>
+                <constraint firstItem="hEn-2i-BiU" firstAttribute="leading" secondItem="xOF-Jx-1Jt" secondAttribute="trailing" constant="20" id="r7n-mx-nBc"/>
+                <constraint firstItem="mga-cK-Sh8" firstAttribute="width" secondItem="XIr-hc-gna" secondAttribute="width" id="vfM-zy-VyQ"/>
+                <constraint firstItem="xOF-Jx-1Jt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vle-fm-f05"/>
+                <constraint firstItem="99Q-2n-nhD" firstAttribute="top" secondItem="xOF-Jx-1Jt" secondAttribute="bottom" constant="10" id="woW-I4-DIy"/>
+                <constraint firstAttribute="trailing" secondItem="3bC-ZI-otZ" secondAttribute="trailing" id="zJV-N1-ijA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HSd-9r-Qjx"/>
+                    <exclude reference="UxL-ST-xuS"/>
+                    <exclude reference="g83-b3-Fb1"/>
+                    <exclude reference="XqR-gd-eud"/>
+                    <exclude reference="Tq6-T1-QEC"/>
+                    <exclude reference="r7n-mx-nBc"/>
+                    <exclude reference="aok-5b-9eC"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="251.5" y="332.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_QQ空间" width="52" height="52"/>
+        <image name="share_qq" width="52" height="52"/>
+        <image name="share_复制链接" width="64" height="64"/>
+        <image name="share_微信" width="52" height="52"/>
+        <image name="share_微博" width="52" height="52"/>
+        <image name="share_朋友圈" width="52" height="52"/>
+    </resources>
+</document>

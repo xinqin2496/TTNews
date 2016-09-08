@@ -1,0 +1,45 @@
+//
+//  NoPictureNewsTableViewCell.m
+//  TTNews
+//
+//  Created by 瑞文戴尔 on 16/4/14.
+//  Copyright © 2016年 瑞文戴尔. All rights reserved.
+//
+
+#import "NoPictureNewsTableViewCell.h"
+
+@interface NoPictureNewsTableViewCell()
+
+
+
+@end
+
+@implementation NoPictureNewsTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.commentCountLabel.text = [NSString stringWithFormat:@"%d评论",arc4random()%1000];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    // Configure the view for the selected state
+}
+
+#pragma mark 切换至日间模式
+-(void)updateToDaySkinMode {
+    self.newsTitleLabel.textColor = [UIColor blackColor];
+    self.contentView.backgroundColor = [UIColor whiteColor];
+    self.separatorLine.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0  blue:240/255.0  alpha:1.0];
+}
+
+#pragma mark 切换至夜间模式
+-(void)updateToNightSkinMode {
+    self.newsTitleLabel.textColor = [UIColor grayColor];
+    self.contentView.backgroundColor = [UIColor colorWithRed:42/255.0 green:39/255.0 blue:43/255.0 alpha:1.0];
+    self.separatorLine.backgroundColor = [UIColor colorWithRed:40/255.0 green:36/255.0  blue:40/255.0  alpha:1.0];
+}
+
+@end

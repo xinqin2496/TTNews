@@ -1,0 +1,66 @@
+//
+//  PrefixHeader.pch
+//  TRProject
+//
+//  Created by jiyingxin on 16/2/17.
+//  Copyright © 2016年 Tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Factory.h"
+#import "TTConst.h"
+
+////用于存放全局宏定义 或者 静态字符串
+#import "Constant.h"
+//#import "RequestPath.h"
+//
+//#import "UIView+RoundExtension.h"   //把图片切成圆 或 矩形
+//#import "NSObject+MJExtension.h"
+//#import "NSObject+AFNetworking.h"
+//#import "UIScrollView+Refresh.h"    //界面刷新
+#import "UIView+HUD.h"              //忙提示
+//
+#import <MJRefresh.h>    //优秀的滚动视图头部和脚步刷新效果
+#import <MJExtension.h>     //优秀的Json解析类库
+#import <AFNetworking.h>        //Github排名第一的第三方网络请求类库，封装了系统的NSURLSession+NSOperation
+#import <UIKit+AFNetworking.h>      //对UIKit类添加类拓展，让诸如UIButton, UIImageView等拥有了网络加载图片的功能
+
+
+#import "KeyboardManager.h" //设置弹出键盘的样式
+
+/* 改变系统的target+selector模式为 block模式。 带来紧凑的代码风格，高效率的回调执行 */
+#import "BlocksKit.h"
+#import "BlocksKit+MessageUI.h"
+#import "BlocksKit+UIKit.h"
+
+#import <UMSocial.h>  //友盟分享
+#import <UMSocialWechatHandler.h>
+#import <UMSocialSinaSSOHandler.h>
+#import <UMSocialQQHandler.h>
+
+#import "UIView+TYAlertView.h"
+#import "TYAlertController.h"
+
+#import <SDImageCache.h>
+#import <UIImageView+WebCache.h> //缓存网络图片
+
+
+#import <FMDB/FMDB.h>       //第三方对数据库的操作类库，是对系统Sqlite3的封装。 使用SQL语句操作数据库
+
+#import "MBProgressHUD.h"       //实现安卓toast风格提示，弹出提示框架
+
+#define equalTo(...)                     mas_equalTo(__VA_ARGS__)
+#define greaterThanOrEqualTo(...)        mas_greaterThanOrEqualTo(__VA_ARGS__)
+#define lessThanOrEqualTo(...)           mas_lessThanOrEqualTo(__VA_ARGS__)
+#define offset(...)                      mas_offset(__VA_ARGS__)
+#import <Masonry.h>         //超好用的链式书写AutoLayout的第三方类库，好用的根本停不下来
+
+#import <AVOSCloud/AVOSCloud.h>  //很好用的后台管理
+
+#endif
+#endif /* PrefixHeader_pch */
