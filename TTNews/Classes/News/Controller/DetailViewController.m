@@ -113,8 +113,13 @@
 }
 -(void)clickCollectBtn:(UIButton *)sender
 {
-    [self.view showSuccess:@"收藏成功"];
-    sender.selected = YES;
+     if (sender.selected == YES) {
+        [self.view showError:@"取消收藏"];
+    }else{
+      [self.view showSuccess:@"收藏成功"];
+    }
+    
+    sender.selected = !sender.selected;
 }
 #pragma mark - clickedBackItem
 - (void)clickedBackItem:(UIBarButtonItem *)btn{
